@@ -24,8 +24,8 @@ ${BUILD_DIR}/Herpestidae.o: ${INCLUDE_DIR}/Herpestidae.hpp  ${SRC_DIR}/zoologico
 ${BUILD_DIR}/Ursidae.o: ${INCLUDE_DIR}/Ursidae.hpp  ${SRC_DIR}/zoologico/Ursidae.cpp
 	${CC} ${CFLAGS} -I ${INCLUDE_DIR}/ -c ${SRC_DIR}/zoologico/Ursidae.cpp -o ${BUILD_DIR}/Ursidae.o 
 
-${BUILD_DIR}/main.o: ${INCLUDE_DIR}/Alimentacao.hpp  ${INCLUDE_DIR}/Animal.hpp ${INCLUDE_DIR}/Cuidador.hpp ${INCLUDE_DIR}/Herpestidae.hpp ${INCLUDE_DIR}/Ursidae.hpp ${SRC_DIR}/main.cpp
-	${CC} ${CFLAGS} -I ${INCLUDE_DIR}/ -c ${SRC_DIR}/main.cpp -o ${BUILD_DIR}/main.o
+${BUILD_DIR}/main.o: ${INCLUDE_DIR}/Alimentacao.hpp  ${INCLUDE_DIR}/Animal.hpp ${INCLUDE_DIR}/Cuidador.hpp ${INCLUDE_DIR}/Herpestidae.hpp ${INCLUDE_DIR}/Ursidae.hpp ./main.cpp
+	${CC} ${CFLAGS} -I ${INCLUDE_DIR}/ -c ./main.cpp -o ${BUILD_DIR}/main.o
 
 # Rule for cleaning files generated during compilation
 # Call 'make clean' to use it
