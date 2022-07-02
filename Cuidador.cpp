@@ -1,24 +1,19 @@
-#ifndef CUIDADOR_HPP
-#define CUIDADOR_HPP
+#include "../../include/Cuidador.hpp"
 
-#include <iostream>
-#include <string>
+Cuidador::Cuidador(std::string _nome, std::string _cpf, std::string _dataDeNascimento, 
+	std::string _telefone, double _salario): nome(_nome), cpf(_cpf), dataDeNascimento(_dataDeNascimento),
+	telefone(_telefone), salario(_salario){}
 
-class Cuidador{
-	private:
-		std::string nome;
-		std::string cpf;
-		std::string dataDeNascimento;
-		std::string telefone;
-    double salario;
-			
-	public:
-		Cuidador(std::string _nome, std::string _cpf, std::string _dataDeNascimento, 
-			std::string _telefone, double _salario); 	
-			
-		std::string getNome();
 
-		void print(); 
-};
+std::string Cuidador::getNome(){
+	return this->nome;
+}
 
-#endif
+void Cuidador::print(){
+	std::cout << "[Cuidador]" << std::endl;
+  std::cout << " Nome: " << this->nome << std::endl;
+	std::cout<< " CPF: " << this->cpf << std::endl;
+	std::cout<< " Telefone: " << this->telefone << std::endl;
+	std::cout<< " Nascimento: " << this->dataDeNascimento << std::endl;
+}
+
