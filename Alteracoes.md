@@ -84,8 +84,3 @@
     ```  
   - [X] Agrupamento das variáveis que armazenam os dados de um mesmo tipo em vectors
   - [X] Impressão dos dados em um foreach para evitar a repetição de código
-
-Além das alterações descritas acima, separei os aquivos em diferentes diretórios buscando uma melhor organização e criei de um makefile para compilação:
-  - build: arquivos compilados
-  - include: arquivos de especificação
-  - src: arquivos de implementação
